@@ -4,7 +4,10 @@
   "description": "javascript lazy treeview component",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "cm": "./node_modules/.bin/git-cz",
+    "test": "./node_modules/.bin/jest --coverage",
+    "precommit": "npm t",
+    "prepush": "npm t",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -26,6 +29,7 @@
   "devDependencies": {
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
+    "husky": "^0.13.4",
     "jest": "^20.0.4",
     "semantic-release": "^6.3.6"
   },
