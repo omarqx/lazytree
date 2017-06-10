@@ -10,12 +10,12 @@ node_js:
 before_script:
 - npm prune
 script:
-- npm t && && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+- npm t && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 after_success:
 - npm run semantic-release
 branches:
-  only:
-  - master
+  except:
+  - "/^v\\d+\\.\\d+\\.\\d+$/"
 deploy:
   provider: heroku
   api_key:
