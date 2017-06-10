@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cm": "./node_modules/.bin/git-cz",
-    "test": "./node_modules/.bin/jest --coverage",
+    "test": "./node_modules/.bin/jest --config=./test/config.json --coverage",
     "precommit": "npm t",
     "prepush": "npm t",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
