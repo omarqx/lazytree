@@ -27,4 +27,4 @@ deploy:
   local_dir: dist
   on:
     repo: omarqx/lazytree
-    branch: build/oq/createProjectSkeleton
+    branch: master
