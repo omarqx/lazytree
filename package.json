@@ -1,0 +1,36 @@
+{
+  "name": "lazytree",
+  "version": "0.0.0-development",
+  "description": "javascript lazy treeview component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omarqx/lazytree.git"
+  },
+  "keywords": [
+    "lazy",
+    "treeview",
+    "component",
+    "javascript"
+  ],
+  "author": "omar qaddoumi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/omarqx/lazytree/issues"
+  },
+  "homepage": "https://github.com/omarqx/lazytree#readme",
+  "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "semantic-release": "^6.3.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
