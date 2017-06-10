@@ -1,19 +1,27 @@
 language: node_js
 cache:
   directories:
-    - node_modules
+  - node_modules
 notifications:
   email: false
 node_js:
-  - '7'
-  - '6'
-  - '4'
+- '7'
+- '6'
+- '4'
 before_script:
-  - npm prune
+- npm prune
 script:
-  - npm t
+- npm t
 after_success:
-  - npm run semantic-release
+- npm run semantic-release
 branches:
   except:
-    - /^v\d+\.\d+\.\d+$/
+  - "/^v\\d+\\.\\d+\\.\\d+$/"
+deploy:
+  provider: heroku
+  api_key:
+    secure: SIT5btZzkzfsaQyNk0rF+hc6BFdQxcY9j4by1foMNl+BQzGPyXEc6tiRBndRvQDOrrq5fQ5vxAfv1Qo9pa4vl7B1C2BDb5QjkFksHWibDp5ANfnrf+h5t+uhPIQOpt2oZXJZeOPzZpbkyV14n1KlOgbBfv5QKu67yPyQ1m+AdunlD35YOl/8o/XHR/gjZDIfHhIejx8wnNOClOiDILDE/IJKpBN8KtInkAhoT7tGDVmBdIdxHdWvHIBisKe2T/OHw++xOBoGA7R9xvHob2i8meiHhcVug/aCVc1bE+uTP4lhNGF1RHO6q8rWmDRDE+PT5LhuWvWs581TmJKYJ9QK26PakGrDBpzMou/WVofPA1gaL6Qb54NimuMQEwuW2kOJm1ZpbZ6lYjDwf75J0jm4HGCYZAEhDlIh4WeL9/pjQ0pL5dnP9kwSQpGBn8rpp5s9Eo0KtThwJ9Jw6BTlcJjgW4T5i8JZqdBFBtMi3JhaVqMU5nTAyv/8X1YcJjQzuBL0fBEhwPG1mhBg7Wkym4urAzugEEv3THE4kr/8TK4MdZB5w5CQHl2VRlO5+3MCjMLJC53YJvOSECFC4q+4t1P3Ke0jl+hv0Nn5dHwCXvEGRA4wF0ggJsqJXNPNApqfVlgliO0EoOTX97D3cyjHQbo46zP+ctDxLHf4CRh2oWavtVM=
+  app: 
+    master: lazytree
+  on:
+    repo: omarqx/lazytree
