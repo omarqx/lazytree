@@ -4,7 +4,7 @@
   "description": "javascript lazy treeview component",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -26,6 +26,7 @@
   "devDependencies": {
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
+    "jest": "^20.0.4",
     "semantic-release": "^6.3.6"
   },
   "config": {
