@@ -1,0 +1,45 @@
+{
+  "name": "lazytree",
+  "version": "0.0.0-development",
+  "description": "javascript lazy treeview component",
+  "main": "index.js",
+  "scripts": {
+    "cm": "./node_modules/.bin/git-cz",
+    "test": "./node_modules/.bin/jest --config=./test/config.json --coverage",
+    "test:watch": "./node_modules/.bin/jest --watch --config=./test/config.json --coverage",
+    "lint": "./node_modules/.bin/eslint src",
+    "precommit": "npm t",
+    "prepush": "npm t && npm run lint",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omarqx/lazytree.git"
+  },
+  "keywords": [
+    "lazy",
+    "treeview",
+    "component",
+    "javascript"
+  ],
+  "author": "omar qaddoumi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/omarqx/lazytree/issues"
+  },
+  "homepage": "https://github.com/omarqx/lazytree#readme",
+  "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "husky": "^0.13.4",
+    "jest": "^20.0.4",
+    "semantic-release": "^6.3.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
