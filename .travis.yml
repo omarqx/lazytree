@@ -10,9 +10,8 @@ node_js:
 before_script:
 - npm prune
 script:
-- npm t
+- npm t && codecov -t 2b3ecb9d-3e35-4d7c-ae63-bed8e2928af0
 after_success:
-- 'cat ./coverage/lcov.info | ./node_modules/.bin/coveralls'
 - npm run semantic-release
 branches:
   except:
