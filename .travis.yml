@@ -10,7 +10,7 @@ node_js:
 before_script:
 - npm prune
 script:
-- npm t
+- npm t && && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 after_success:
 - npm run semantic-release
 branches:
