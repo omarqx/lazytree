@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic list rendering renders correctly 1`] = `
+<ul>
+  <li>
+    first
+  </li>
+  <li>
+    second
+  </li>
+</ul>
+`;
