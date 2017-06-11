@@ -1,11 +1,16 @@
+function createTextElement(type, text, id) {
+  const element = document.createElement(type);
+  element.appendChild(document.createTextNode(text));
+  element.setAttribute('id', id);
+  return element;
+}
+
 function treeview(list) {
-  const ul = document.createElement('ul')
-  const first = document.createElement('li');
-  first.appendChild(document.createTextNode('first'));
-  const second = document.createElement('li');
-  second.appendChild(document.createTextNode('second'));
-  ul.appendChild(first);
-  ul.appendChild(second);
+  const ul = document.createElement('ul');
+  list.map(item => createTextElement('li', item.value, item.id))
+    .forEach((element) => {
+      ul.appendChild(element);
+    });
   return ul;
 }
 

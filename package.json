@@ -6,7 +6,7 @@
   "scripts": {
     "cm": "./node_modules/.bin/git-cz",
     "test": "./node_modules/.bin/jest --config=./test/config.json --coverage",
-    "test:watch": "./node_modules/.bin/jest --watch --config=./test/config.json --coverage",
+    "test:watch": "./node_modules/.bin/jest --watchAll --config=./test/config.json --coverage",
     "lint": "./node_modules/.bin/eslint src",
     "precommit": "npm t",
     "prepush": "npm t && npm run lint",

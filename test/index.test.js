@@ -1,7 +1,7 @@
 const treeview = require('../src/index');
 
-describe('basic list rendering', () => {
-  it('renders correctly', () => {
+describe('basic list', () => {
+  it('should render basic two elements correctly', () => {
     const tree = treeview([
       {
         value: 'first',
@@ -10,6 +10,15 @@ describe('basic list rendering', () => {
       {
         value: 'second',
         id: 2
+      }
+    ]);
+    expect(tree).toMatchSnapshot();
+  });
+  it('should render basic single element correctly', () => {
+    const tree = treeview([
+      {
+        value: 'first',
+        id: 1
       }
     ]);
     expect(tree).toMatchSnapshot();

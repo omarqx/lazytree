@@ -1,11 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`basic list rendering renders correctly 1`] = `
+exports[`basic list should render basic single element correctly 1`] = `
 <ul>
-  <li>
+  <li
+    id="1"
+  >
     first
   </li>
-  <li>
+</ul>
+`;
+
+exports[`basic list should render basic two elements correctly 1`] = `
+<ul>
+  <li
+    id="1"
+  >
+    first
+  </li>
+  <li
+    id="2"
+  >
     second
   </li>
 </ul>
