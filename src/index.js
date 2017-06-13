@@ -15,8 +15,9 @@ function createTextElement(type, text, id) {
   return element;
 }
 
-function treeview(list) {
+function treeview(list, id) {
   const ul = document.createElement('ul');
+  ul.setAttribute('id', (id === undefined) ? guid() : id);
   list.map(item => createTextElement('li', item.value, item.id))
     .forEach((element) => {
       ul.appendChild(element);

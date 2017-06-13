@@ -1,9 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`basic list should render empty list correctly 1`] = `<ul />`;
+exports[`basic list should render empty list correctly 1`] = `
+<ul
+  id="test"
+/>
+`;
 
 exports[`basic list should render single element correctly 1`] = `
-<ul>
+<ul
+  id="test"
+>
   <li
     id="1"
   >
@@ -13,7 +19,9 @@ exports[`basic list should render single element correctly 1`] = `
 `;
 
 exports[`basic list should render two elements correctly 1`] = `
-<ul>
+<ul
+  id="test"
+>
   <li
     id="1"
   >
