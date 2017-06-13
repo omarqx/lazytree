@@ -10,7 +10,7 @@ node_js:
 before_script:
 - npm prune
 script:
-- npm t && codecov -t 2b3ecb9d-3e35-4d7c-ae63-bed8e2928af0
+- npm t -- --updateSnapshot && codecov -t 2b3ecb9d-3e35-4d7c-ae63-bed8e2928af0
 after_success:
 - npm run semantic-release
 branches:
